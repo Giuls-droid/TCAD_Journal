@@ -1,0 +1,31 @@
+\documentclass[../TCASII_jrnl.tex]{subfiles}
+\graphicspath{{\subfix{images/}}}
+
+\begin{document}
+standard CMOS scaling is approaching its technological limits, and 3D integration is considered one of its most
+promising alternatives \cite{mybib:beyne20063d}. With respect to a standard 2D design, die stacking is expected to reduce
+overall wire length, thus bringing power, performance and area (PPA) improvements \cite{mybib:black2006stacking}. Stacked
+3D-ICs can be manufactured using different process technologies, with the most common being Through Silicon Vias (TSV).
+However, a tighter pitch of 3D interconnects is required to further boost these advantages. This can be achieved with
+Face-to-Face (F2F) bonded 3D-ICs. Leveraging the Hybrid Bonding (HB) process \cite{mybib:katti20093d}, 3D system
+integration with CuPads pitch below 1$\mu$m can be achieved \cite{mybib:HBref}. Subsequently, fine-grain
+functional system partitioning with no area overhead for Die-to-Die connectivity is enabled, yielding better wire length
+savings and associated benefits. Despite the progress in the processing technology, the power delivery for 3D-ICs is
+still known to be a complex problem \cite{mybib:deliveryref1}, concerning both the inter-die and on-die power
+delivery. While these issues are shared among all types of 3D-ICs, more options for power delivery are available for
+more mature integration solutions. In fact, in typical designs, TSVs are used to connect the two dies, and they can be
+used also for power and ground (P/G) nets \cite{mybib:TSVref2}, at the expenses of the die area. Leveraging the
+fine pitch of 3D interconnect that is achieved by HB, stacking the dies F2F is a potential solution to the inter-die
+power delivery issue, as the same bonding pads used for signals can be used to deliver power to the die on the top with
+no area overhead. These improvements can be further boosted by minimizing also the impact of the on-die PDN. This can be
+obtained by combining two innovative process technologies: Buried Power Rail (BPR) and Backside PDN (BS-PDN)
+\cite{mybib:bprref}\cite{mybib:backsidePDN}. Both solutions have already proved very promising in a standard
+2D design, but have yet to be implemented in a 3D scenario. In fact, a full PDN specifically designed for 3D F2F stacked
+ICs has not been designed nor assessed from the IR-drop perspective. One example is mentioned in
+\cite{mybib:monolithic}; however only the impact of the metal resources is analyzed and as a means to illustrate
+the benefit of another type of 3D integration. This work aims at bridging these gaps by proposing a flexible 3D-PDN
+design for F2F bonded IC, including backside processing and a 3D aware rail analysis flow to assess its performance.
+\end{document}
+
+\bibliographystyle{./bibtex/bib/IEEEtran}
+\bibliography{./bibtex/bib/IEEEabrv,./bibtex/bib/TCASII_JournalBib.bib}
